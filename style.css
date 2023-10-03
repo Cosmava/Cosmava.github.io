@@ -6,14 +6,14 @@ body, h1, h2, h3, p {
 
 /* Set a background color and text color */
 body {
-    background-color: #f0f0f0;
-    color: #333;
-    font-family: Arial, sans-serif;
+    background-color: #B200ED;
+    color: #fff;
+    font-family: sans-serif;
 }
 
 /* Style the header and navigation menu */
 header {
-    background-color: #333;
+    background-color: #08A162;
     color: #fff;
     padding: 10px 0;
     text-align: center;
@@ -39,11 +39,15 @@ section {
     padding: 40px;
 }
 
+.home {
+    text-align: center;
+}
+
 /* Style the project boxes */
 .project {
     margin-bottom: 20px;
     padding: 10px;
-    background-color: #fff;
+    background-color: #08A162;
     box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
 }
 
@@ -54,9 +58,10 @@ section {
     color: #333;
 }
 
+
 /* Style the footer */
 footer {
-    background-color: #333;
+    background-color: #08A162;
     color: #fff;
     text-align: center;
     padding: 10px 0;
