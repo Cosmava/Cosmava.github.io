@@ -1,3 +1,7 @@
+*{
+    box-sizing: border-box;
+}
+
 /* Reset some default styles */
 body, h1, h2, h3, p {
     margin: 0;
@@ -6,7 +10,7 @@ body, h1, h2, h3, p {
 
 /* Set a background color and text color */
 body {
-    background-color: #B200ED;
+    background-color: #6C0BD6;
     color: #fff;
     font-family: sans-serif;
 }
@@ -15,32 +19,55 @@ body {
 header {
     background-color: #08A162;
     color: #fff;
-    padding: 10px 0;
+    padding: 30px 0;
     text-align: center;
 }
 
-nav ul {
-    list-style: none;
+.topnav{
+    overflow: hidden;
+    background-color: #08A162;
 }
 
-nav ul li {
-    display: inline;
-    margin-right: 20px;
-}
-
-nav ul li a {
+.topnav a{
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
     text-decoration: none;
-    color: #fff;
-    font-weight: bold;
+}
+.topnav a:hover{
+    background-color: #056E42;
+}
+
+.column{
+    float: left;
+    padding: 10px;
+}
+
+.column.lside{
+    width: 20%;
+    text-align: left;
+
+}
+.column.middle{
+    width: 60%;
+    text-align: center; 
+    background-color: #B200ED;   
+}
+.column.rside{
+    width: 20%;
+    text-align: right;
+}
+.row:after{
+    content: "";
+    display: table;
+    clear: both;
 }
 
 /* Style the sections */
 section {
     padding: 40px;
-}
-
-.home {
-    text-align: center;
 }
 
 /* Style the project boxes */
@@ -49,6 +76,7 @@ section {
     padding: 10px;
     background-color: #08A162;
     box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+    text-align: left;
 }
 
 /* Style the social media links */
@@ -71,3 +99,31 @@ footer img {
     width: 30px;
     height: 30px;
 }
+
+.textLink{
+    color:white;
+}
+
+.responsive {
+    max-width: 100%;
+    height: auto;
+  }
+
+@media only screen and (max-width: 800px) {
+    /* For mobile phones: */
+         .topnav a{
+        width: 100%;
+        }
+        h1 {
+            font-size: 4vw;
+        }
+        h2{
+            font-size: 3vw;
+        }
+        h3{
+            font-size: 2vw;
+        }
+        a{
+            font-size: 3vw;
+        }
+    }
