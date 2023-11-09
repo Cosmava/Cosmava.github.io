@@ -17,7 +17,7 @@ body {
 
 /* Style the header and navigation menu */
 header {
-    background-color: #08A162;
+    background-color: #108DA1;
     color: #fff;
     padding: 30px 0;
     text-align: center;
@@ -25,7 +25,7 @@ header {
 
 .topnav{
     overflow: hidden;
-    background-color: #08A162;
+    background-color: #108DA1;
 }
 
 .topnav a{
@@ -37,7 +37,7 @@ header {
     text-decoration: none;
 }
 .topnav a:hover{
-    background-color: #056E42;
+    background-color: #0C6E7D;
 }
 
 .column{
@@ -74,7 +74,7 @@ section {
 .project {
     margin-bottom: 20px;
     padding: 10px;
-    background-color: #08A162;
+    background-color: #108DA1;
     box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
     text-align: left;
 }
@@ -89,7 +89,7 @@ section {
 
 /* Style the footer */
 footer {
-    background-color: #08A162;
+    background-color: #108DA1;
     color: #fff;
     text-align: center;
     padding: 10px 0;
