@@ -1,84 +1,391 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jakub Burchart - Portfolio</title>
-    <link rel="icon" type="image/x-icon" href="github-icon.png">
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <br>
-    <div class="row">
-        <div class="column lside">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jakub Burchart</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="icon" type="image/x-icon" href="/images/favicon2.png" />
 
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+Mono:wght@100..900&family=Silkscreen:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Icons -->
+    <script
+      src="https://kit.fontawesome.com/6deba7d055.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <nav class="nav-bar">
+      <div class="title" id="logoHomeLink">Jakub.</div>
+      <ul>
+        <li id="links">
+          <div class="night-mode"></div>
+          <!-- <div class="toggle-container">
+            <input type="checkbox" id="darkModeToggle" />
+            <label for="darkModeToggle" class="toggleButton"></label>
+          </div> -->
+          <div class="a" id="homeLink">Home</div>
+          <div class="a" id="aboutLink">About</div>
+          <div class="a" id="projectLink">Projects</div>
+          <button class="main-button" id="contactMeBtn">Contact me</button>
+        </li>
+        <div class="menu" onclick="transformMenu()">
+          <div class="line line-1"></div>
+          <div class="line line-2"></div>
+          <div class="line line-3"></div>
+        </div>
+      </ul>
+    </nav>
+
+    <main>
+      <!-- Section 1 Header -->
+      <section class="section home" id="home">
+        <div class="home-text">
+          <h1>Hello and welcome to my portfolio!</h1>
+          <p>
+            I am a student currently doing a games, animation and VFX course in
+            City of Bristol College. This is my portfolio feel free to look
+            around at some of the stuff that I have made.
+          </p>
+          <div class="buttons">
+            <a href="./files/CV.pdf" download="">
+              <button class="main-button">Download CV</button>
+            </a>
+            <button class="another-button" id="aboutMe2">About me</button>
+          </div>
+        </div>
+        <div class="wave-emoji">
+          <img src="./images/waving hand.png" alt="waving hand" />
+        </div>
+      </section>
+
+      <!-- section 2 About me -->
+      <section class="section about-me" id="aboutMe">
+        <div class="portfolio-image">
+          <img
+            src="images/night.png"
+            alt="portfolio image"
+            id="portfolioImage"
+          />
+        </div>
+        <div class="about-me-text">
+          <h2>About me</h2>
+          <p>
+            Hi. My name is Jakub Burchart. I am <span id="age"></span> years old
+            and I was born in Poland. I have been playing games since I was very
+            young and for a long time I have been interested in how games are
+            made and how they work especially games with interesting features
+            such as
+            <a
+              href="https://store.steampowered.com/app/400/Portal/"
+              class="link-hover"
+              >Portal 1</a
+            >
+            and
+            <a
+              href="https://store.steampowered.com/app/620/Portal_2/"
+              class="link-hover"
+              >2</a
+            >
+            and
+            <a
+              href="https://store.steampowered.com/app/1049410/Superliminal/"
+              class="link-hover"
+              >Superliminal</a
+            >,
+            <a
+              href="https://store.steampowered.com/app/1043340/No_Time/"
+              class="link-hover"
+              >No Time</a
+            >
+            and
+            <a
+              href="https://store.steampowered.com/app/1382070/Viewfinder/"
+              class="link-hover"
+              >Viewfinder</a
+            >.
+          </p>
+
+          <p>
+            I am mainly interested in the programming side of game delvelopment
+            but I do also like the design side (making textures/sprites, level
+            design, etc.) I have knowledge in using <a
+              href="https://en.wikipedia.org/wiki/C_Sharp_(programming_language)"
+              class="link-hover"
+              >C#</a
+            >
+            and
+            <a href="https://gdscript.com/" class="link-hover">GDscript</a> and
+            also some other programming languages such as
+            <a href="https://en.wikipedia.org/wiki/HTML" class="link-hover"
+              >HTML</a
+            >,
+            <a href="https://en.wikipedia.org/wiki/CSS" class="link-hover"
+              >CSS</a
+            >,
+            <a
+              href="https://en.wikipedia.org/wiki/Python_(programming_language)"
+              class="link-hover"
+              >Python</a
+            >
+            and a bit of
+            <a
+              href="https://en.wikipedia.org/wiki/JavaScript"
+              class="link-hover"
+              >Javascript</a
+            >.
+          </p>
         </div>
 
-        <div class="column middle">
-
-            <header>
-                <h1>Jakub Burchart</h1>
-                <h2 style="color:#0C6E7D">Student</h2>
-            </header>
-            <br>
-
-            <div class="topnav">
-                <a href="index.html">Home</a>
-                <a href="about.html">About Me</a>
-                <a href="projects.html">Projects</a>
-                <a href="#contact">Contact</a>
+        <div class="languages">
+          <h3>Languages</h3>
+          <div>
+            <div class="language-grid polish-language">
+              <p>🇵🇱 Polish</p>
+              <div class="polish-line"></div>
             </div>
-
-
-
-            <section id="home">
-                <h2>Hello and welcome to my portfolio!</h2>
-                <br>
-                <p>I am a student currently doing a games, 
-                    animation and VFX course in City of Bristol College. 
-                    This is my portfolio feel free to look around at some 
-                    of the stuff that I have made.</p>
-            </section>
-
-            <section id="personal">
-                <h2>Project previews</h2>
-                <br>
-                <div class="project">
-                    <h2>Ball Platformer</h2>
-                    <a href="projects.html#BallPlatformer"><img src="BallPlatformer.png" alt="Ball Platformer" class="responsive"></a>
-                    <p>Click the image to view project.</p>
-                </div>
-                
-                <div class="project">
-                    <h2>31 Days To Die</h2>
-                    <a href="projects.html#31DaysToDie"><img src="31DaysToDie.PNG" alt="31 Days To Die" style="max-width: 50%; height: auto;"></a>
-                    <p>Click the image to view project.</p>
-                </div>
-                </section>
-
-            <footer>
-                <section id="contact">
-                    <h2>Contact</h2>
-                    <br>
-                    <p>You can reach me at <a href="mailto:kuba.burchart33@gmail.com">kuba.burchart33@gmail.com</a>.</p>
-                </section>
-                <div class="social">
-                    <a href="https://github.com/Cosmava" target="_blank"><img src="github-icon.png" alt="GitHub"></a>
-                    <a href="https://cosmava.itch.io/" target="_blank"><img src="itch-icon.png" alt="Itch"></a>
-                    <a href="https://www.linkedin.com/in/jakub-burchart-843a45293/" target="_blank"><img src="linkedin-icon.png" alt="Linkedin"></a>
-                    <!-- Add links to your other social media profiles here -->
-                </div>
-            </footer>
-
+            <div class="language-grid english-language">
+              <p>🇬🇧 English</p>
+              <div class="english-line"></div>
             </div>
-        
-
-        <div class="column rside">
-        
+          </div>
         </div>
-    </div>
 
-    <br>
-</body>
-<!-- V&J <3 -->
+        <div class="technical-skills">
+          <h3>Technical skills</h3>
+          <div class="boxes">
+            <div class="box">
+              <img src="./images/icons/c-icon.png" alt="" />
+            </div>
+            <div class="box">
+              <img src="./images/icons/GDscript-icon.png" alt="" />
+            </div>
+            <div class="box">
+              <img src="./images/icons/python icon.png" alt="" />
+            </div>
+            <div class="box">
+              <img src="./images/icons/html.png" alt="" />
+            </div>
+            <div class="box">
+              <img src="./images/icons/css.png" alt="" />
+            </div>
+            <div class="box">
+              <img src="./images/icons/javascript.png" alt="" />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Section 3 -->
+      <section class="section projects" id="projects">
+        <h2 class="center">My projects</h2>
+        <p class="center">
+          Welcome to my projects. Here you can view all the things that i have
+          worked on both personal projects done in my own time and professional
+          projects done in College.
+        </p>
+
+        <div class="projects-grid">
+          <div class="card" onclick="openPopUp('preview1')">
+            <img
+              src="./images/BallPlatformer header.png"
+              alt="Ball Platformer project image"
+            />
+            <div class="text-card-container">
+              <h3>Ball Platformer</h3>
+              <div class="project-type personal">Personal</div>
+              <p>
+                This is my first game that I made when I was first messing
+                around with Unity and just trying to make a functional game...
+              </p>
+            </div>
+          </div>
+          <div class="card" onclick="openPopUp('preview2')">
+            <img
+              src="./images/31DaysToDie header.png"
+              alt="31 days to die project image"
+            />
+            <div class="text-card-container">
+              <h3>31 Days To Die</h3>
+              <div class="project-type professional">Professional</div>
+              <p>
+                This is a project that we did in college, where we were put into
+                groups and made games for the Godot Wild Jam #62...
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- project pop-ups -->
+      <div class="pop-up-container" id="preview1">
+        <div class="pop-up-inner">
+          <div class="closeBtn" onclick="closePopUp('preview1')"></div>
+          <h2>Ball Platformer</h2>
+          <div class="pop-up-inner-columns">
+            <img
+              src="./images/BallPlatformer header.png"
+              alt="BallPlatformer project image"
+            />
+            <div class="mini-description">
+              <p><span class="bold">Software used</span>: Unity</p>
+              <p><span class="bold">Audience</span>: teenagers</p>
+              <p><span class="bold">Release Date</span>: 16 May 2022</p>
+              <p><span class="bold">Levels</span>: 5 levels</p>
+              <p><span class="bold">Characters</span>: ball</p>
+              <a href="https://cosmava.itch.io/ball-platformer" target="_blank">
+                <button class="main-button">
+                  <i class="fa-solid fa-download"></i>Download
+                </button>
+              </a>
+            </div>
+          </div>
+          <p>
+            This is my first game that I made when I was first messing around
+            with Unity and just trying to make a functional game. It is very
+            basic with no sounds and no music and only 5 levels. Looking back I
+            would change a lot but I am proud of it as it is my first ever game
+            that I made with close to no knowledge of how to code.
+          </p>
+          <video class="project-video" controls>
+            <source src="./files/ball platformer.mp4" type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
+        </div>
+      </div>
+
+      <div class="pop-up-container" id="preview2">
+        <div class="pop-up-inner">
+          <div class="closeBtn" onclick="closePopUp('preview2')"></div>
+          <h2>31 days to die</h2>
+          <div class="pop-up-inner-columns">
+            <img
+              src="./images/31DaysToDie header.png"
+              alt="BallPlatformer project image"
+            />
+            <div class="mini-description">
+              <p><span class="bold">Software used</span>: Godot</p>
+              <p><span class="bold">Audience</span>: teenagers</p>
+              <p><span class="bold">Release Date</span>: 22 October 2023</p>
+              <p><span class="bold">Levels</span>: 5 levels</p>
+              <p>
+                <span class="bold">Characters</span>: apple (like a weapon),
+                person, squirrels
+              </p>
+              <a
+                href="https://moonjam-productions.itch.io/31-days-to-die"
+                target="_blank"
+              >
+                <button class="main-button">
+                  <i class="fa-solid fa-download"></i>Download
+                </button>
+              </a>
+            </div>
+          </div>
+          <p>
+            This is a project that we did in college, where we were put into
+            groups and made games for the Godot Wild Jam #62. I mainly focused
+            on the programming side of the game. It is a Doom-like wave survival
+            game. I am very happy with how it turned out. The story of the game
+            is that you play as a living apple and you need to protect your boss
+            who lives in a giant pumpkin while being attacked by giant squirrels
+            and you only weapon is throwing apples at them (Until layer where
+            you unlock anoh another weapon but you have to play it to find out
+            what it is). Overall the game came out pretty good there are a few
+            things that we could improve like variety of enemies but as we are
+            still learning I think we did a really good job.
+          </p>
+          <video class="project-video" controls>
+            <source src="./files/31 days to die.mp4" type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
+          <script src="https://player.vimeo.com/api/player.js"></script>
+        </div>
+      </div>
+    </main>
+
+    <footer class="footer" id="footer">
+      <div class="flex">
+        <div class="contact-card">
+          <img src="./images/night.png" alt="" />
+          <div class="contact-card-text">
+            <div>
+              <h3>Jakub Burchart</h3>
+              <p>Student / Game developer / Programmer</p>
+              <hr class="white-line" />
+              <p>Level 3 Game Design</p>
+              <p>City of Bristol College</p>
+              <p>kuba.burchart33@gmail.com</p>
+            </div>
+            <div class="contact-icons">
+              <div>
+                <a href="https://github.com/Cosmava">
+                  <img src="./images/icons/github logo.png" alt="github icon" />
+                </a>
+              </div>
+              <div>
+                <a href="https://cosmava.itch.io/">
+                  <img src="./images/icons/itch logo.png" alt="itch icon" />
+                </a>
+              </div>
+              <div>
+                <a href="https://www.linkedin.com/in/jakub-burchart-843a45293/">
+                  <img src="./images/icons/inch logo.png" alt="linkedin icon" />
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="contact-card">
+          <img src="./images/vira-avatar.png" alt="vira avatar" />
+          <div class="contact-card-text">
+            <div>
+              <h3>Vira Saienko</h3>
+              <p>Student / Web designer for this webpage</p>
+              <hr />
+              <p>Level 2 Digital and IT skills</p>
+              <p>City of Bristol College</p>
+              <p>virasaienko@gmail.com</p>
+            </div>
+            <div class="contact-icons">
+              <div>
+                <a href="https://github.com/sweet-orchard">
+                  <img src="./images/icons/github logo.png" alt="github icon" />
+                </a>
+              </div>
+              <div>
+                <a href="https://www.instagram.com/kot_bob/">
+                  <img
+                    src="./images/icons/instagram logo.png"
+                    alt="instagram icon"
+                  />
+                </a>
+              </div>
+              <div>
+                <a href="https://t.me/vira_saienko">
+                  <img
+                    src="./images/icons/telegram logo.png"
+                    alt="telegram icon"
+                  />
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer-rights">
+        &copy; <span id="currentYear"></span> Jakub Burchart All rights reserved
+      </div>
+    </footer>
+
+    <script src="functions.js"></script>
+  </body>
 </html>
